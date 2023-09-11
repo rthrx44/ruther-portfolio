@@ -1,0 +1,17 @@
+.navbar_con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_links-con {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav_links {
+  list-style: none;
+}

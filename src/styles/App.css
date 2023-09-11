@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+
+  /*? website colors */
+  --clr-dark: #000000;
+  --clr-light: #ffffff;
+
+  /*? website font sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+
+  /*? website fonts */
+  --font-primary: 'Roboto Serif', serif;
+  --font-secondary: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-primary);
+  color: var(--font-color);
+}
+
+body.light {
+  --background-color: var(--clr-dark);
+  --font-color: var(--clr-light);
+  transition: 0.3s ease-in-out;
+}
+
+body.dark {
+  --background-color: var(--clr-light);
+  --font-color: var(--clr-dark);
+  transition: 0.3s ease-in-out;
+}

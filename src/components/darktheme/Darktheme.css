@@ -1,0 +1,7 @@
+.theme_toggle {
+  display: flex;
+  background: none;
+  border: none;
+  color: var(--font-color);
+  transition: .3s ease-out;
+}
