@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Darktheme.css";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeTwoToneIcon from '@mui/icons-material/DarkModeTwoTone';
+import LightModeTwoToneIcon from '@mui/icons-material/LightModeTwoTone';
 
 function Darktheme() {
   const [darkMode, setDarkMode] = useState(false);
   
-  const ActiveMode = () => {
+  const switchTheme = () => {
     setDarkMode(!darkMode);
     if (darkMode === true) {
       document.body.classList.add("light");
@@ -33,7 +33,7 @@ function Darktheme() {
     <>
       <div className="dark_toggle">
         <button className='theme_toggle'>
-          {localStorage.getItem("theme") === "dark" ? (<DarkModeIcon onClick={ActiveMode} />) : (<LightModeIcon onClick={ActiveMode} />)}
+          {localStorage.getItem("theme") === "dark" ? (<DarkModeTwoToneIcon onClick={switchTheme} />) : (<LightModeTwoToneIcon onClick={switchTheme} />)}
         </button>
       </div>
     </>

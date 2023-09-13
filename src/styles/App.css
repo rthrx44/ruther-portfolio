@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
-
+  
   /*? website colors */
-  --clr-dark: #000000;
-  --clr-light: #ffffff;
+  --clr-dark: #080713;
+  --clr-light: #eff6ff;
+  --clr-slate400: #94a3b8;
+  --clr-slate500: #64748b;
+  --clr-slate600: #475569;
+  --clr-pink: #f50057;
+  --clr-indigo: #4f46e5;
 
   /*? website font sizes */
   --size-xxs: 0.5rem;
@@ -24,8 +29,13 @@
   --size-10xl: 10rem;
 
   /*? website fonts */
-  --font-primary: 'Roboto Serif', serif;
+  --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Roboto', sans-serif;
+}
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+  box-sizing: border-box;
 }
 
 html {
@@ -33,19 +43,66 @@ html {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--clr-dark);
   font-family: var(--font-primary);
-  color: var(--font-color);
+  color: var(--clr-light);
 }
 
 body.light {
-  --background-color: var(--clr-dark);
-  --font-color: var(--clr-light);
+  --clr-dark: #080713;
+  --clr-light: #eff6ff;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
   transition: 0.3s ease-in-out;
 }
 
 body.dark {
-  --background-color: var(--clr-light);
-  --font-color: var(--clr-dark);
+  --clr-light: #080713;
+  --clr-dark: #eff6ff;
+  --clr-slate600: #64748b;
+  --clr-slate400: #475569;
   transition: 0.3s ease-in-out;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+strong {
+  color: var(--clr-indigo);
+}
+
+a {
+  color: var(--clr-pink);
+}
+
+/*? Scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-pink);
+  outline: 1px solid var(--clr-pink);
+  border-radius: 0.3rem;
 }

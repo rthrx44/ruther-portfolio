@@ -1,17 +1,143 @@
-.navbar_con {
+.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 9999;
 }
 
-.nav_links-con {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.nav_links-con{
+  display: none;
+  list-style: none;
 }
 
 .nav_links {
-  list-style: none;
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  font-size: var(--size-sm);
+  font-weight: 600;
+  color: var(--clr-slate600);
+  letter-spacing: -.02rem;
+  cursor: pointer;
+  transition: color .3s;
 }
+
+.nav_links:hover {
+  color: var(--clr-pink);
+}
+
+.nav_line {
+  list-style: none;
+  border: 1px solid var(--clr-slate600);
+  padding-top: 1.3em;
+}
+
+
+/*? Mobile Css */
+.hamburger_menu {
+  display: flex;
+  justify-content: flex-end;
+  background: none;
+  border: none;
+  color: var(--clr-light);
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger_menu:hover {
+  color: var(--clr-pink);
+}
+
+.mobile-navbar_con {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-dark);
+  transition: background-color 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.mobile-nav_links-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+.mobile-nav_links-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+.mobile-nav_links {
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  font-size: var(--size-sm);
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: #475569;
+  cursor: pointer;
+}
+
+.mobile-nav_links:hover {
+  color: var(--clr-pink);
+}
+
+.mobile-nav_line {
+  border: 1px solid var(--clr-slate600);
+  padding-right: 2rem;
+}
+/*? End of Mobile Css */
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+  .mobile-navbar_con {
+    display: none;
+  }
+
+  .hamburger_menu{
+    display: none;
+  }
+
+  .nav_links-con{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav_links {
+    font-size: var(--size-xs);
+  }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

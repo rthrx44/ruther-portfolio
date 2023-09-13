@@ -2,11 +2,12 @@ import './styles/Modern-normalize.css';
 import './styles/App.css';
 import './styles/Utils.css';
 import Landing from './pages/landing/Landing';
+import { skillIcon, covape } from './components/utils/Data'
 
 function App() {
   return (
     <div className="App">
-      <Landing/>
+      <Landing skillIcon={skillIcon} covape={covape}/>
     </div>
   );
 }
