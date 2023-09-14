@@ -33,7 +33,7 @@ function Darktheme() {
     <>
       <div className="dark_toggle">
         <button className='theme_toggle'>
-          {localStorage.getItem("theme") === "dark" ? (<DarkModeTwoToneIcon onClick={switchTheme} />) : (<LightModeTwoToneIcon onClick={switchTheme} />)}
+          {localStorage.getItem("theme") === "dark" ? (<DarkModeTwoToneIcon onClick={switchTheme} titleAccess="Toggle Darkmode" />) : (<LightModeTwoToneIcon onClick={switchTheme} titleAccess="Toggle Lightmode" />)}
         </button>
       </div>
     </>

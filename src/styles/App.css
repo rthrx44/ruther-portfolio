@@ -45,6 +45,8 @@ html {
 body {
   background-color: var(--clr-dark);
   font-family: var(--font-primary);
+  font-size: var(--size-base);
+  line-height: 1rem;
   color: var(--clr-light);
 }
 

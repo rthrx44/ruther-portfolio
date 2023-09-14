@@ -58,25 +58,43 @@ function Landing({skillIcon, covape}) {
         </div>
       </section>
       <section id='projects' className='featured container section'>
-        <h5 className='featured_text'>Featured Project</h5>
-        <div className='featured_title-con'>
-          <h4 className='about_title'>COVAPE-19 GARAGE</h4>
-          <a className='featured_icon' target='_blank' href='https://covape-19-garage-rthrx44.vercel.app/' rel='noreferrer' title='Website Link'><OpenInNewRoundedIcon/></a>
+        <div className='featured_content'>
+          <div className='featured-con'>
+            <h5 className='featured_text'>Featured Project</h5>
+            <div className='featured_title-con'>
+              <h4 className='about_title'>COVAPE-19 GARAGE</h4>
+              <a className='featured_icon' target='_blank' href='https://covape-19-garage-rthrx44.vercel.app/' rel='noreferrer' title='Website Link'><OpenInNewRoundedIcon/></a>
+            </div>
+            <p className='description'>
+            Is a vape shop website focusing on buying vape products, <br/>such as electronic vape, disposable vape, and vape juice.
+            </p>
+            <p className='description'>
+            A functional and responsive website. <br/>Includes a Landing page, Sign In / Sign up, Dashboard, <br/>Product Information, and Cart.
+            </p>
+          </div>
+          <div className='featured-tech'>
+            <h5 className='subtitle'>Tech Tools Use</h5>
+            <p className='description'>
+              <div className='use_tech-con'>
+                <div className='use_tech'>
+                  <h5>HTML</h5>
+                </div>
+                <div className='use_tech'>
+                  <h5>CSS</h5>
+                </div>
+                <div className='use_tech'>
+                  <h5>JavaScript</h5>
+                </div>
+                <div className='use_tech'>
+                  <h5>React</h5>
+                </div>
+                <div className='use_tech'>
+                  <h5>SwiperJS</h5>
+                </div>
+              </div>
+            </p>
+          </div>
         </div>
-        <p className='description'>
-        Is a vape shop website focusing on buying vape products, <br/>such as electronic vape, disposable vape, and vape juice.
-        </p>
-        <p className='description'>
-        A functional and responsive website. <br/>Includes a Landing page, Sign In / Sign up, Dashboard, <br/>Product Information, and Cart.
-        </p>
-        <h5 className='subtitle'>Tech Tools Use</h5>
-        <p className='description'>
-          - HTML<br/>
-          - CSS<br/>
-          - JavaScript<br/>
-          - React<br/>
-          - SwiperJS<br/>
-        </p>
         <div className='screenshot-con'>
           {covape.map((img, index) => {
             return <Screenshot images={img} key={index}/>
@@ -89,9 +107,7 @@ function Landing({skillIcon, covape}) {
         <div className='project_content'>
           <div className='project_link-con'>
             <div className='project_img website'>
-              <a href='https://covape-19-garage-rthrx44.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
-                <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" />
-              </a>
+              <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
             </div>
             <p className='project_name title'>Covape-19 Garage</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
@@ -113,9 +129,7 @@ function Landing({skillIcon, covape}) {
           </div>
           <div className='project_link-con opposite'>
             <div className='project_img website'>
-              <a href='https://covape-19-garage-rthrx44.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
-                <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" />
-              </a>
+              <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
             </div>
             <p className='project_name title'>Covape-19 Garage</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
@@ -137,9 +151,7 @@ function Landing({skillIcon, covape}) {
           </div>
           <div className='project_link-con'>
             <div className='project_img website'>
-              <a href='https://covape-19-garage-rthrx44.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
-                <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" />
-              </a>
+              <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
             </div>
             <p className='project_name title'>Covape-19 Garage</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
@@ -161,9 +173,7 @@ function Landing({skillIcon, covape}) {
           </div>
           <div className='project_link-con opposite'>
             <div className='project_img website'>
-              <a href='https://covape-19-garage-rthrx44.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
-                <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" />
-              </a>
+              <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
             </div>
             <p className='project_name title'>Covape-19 Garage</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
