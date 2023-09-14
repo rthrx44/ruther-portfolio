@@ -34,12 +34,15 @@
   font-size: var(--size-sm);
   color: var(--clr-slate600);
   line-height: 1.4;
-  letter-spacing: .06em;
+  letter-spacing: 0.06em;
 }
 
+/*! About CSS */
+/*! About CSS */
+/*! About CSS */
+
 .about_title {
-  font-size: var(--size-xl);
-  margin-bottom: 1.3rem;
+  font-size: var(--size-2xl);
 }
 
 .about_content {
@@ -54,6 +57,7 @@
   font-family: var(--font-secondary);
   font-size: var(--size-sm);
   color: var(--clr-slate600);
+  margin-top: 1.3rem;
   margin-bottom: 1rem;
 }
 
@@ -69,6 +73,10 @@
   height: 23rem;
 }
 
+/*! Skills CSS */
+/*! Skills CSS */
+/*! Skills CSS */
+
 .tech {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -79,16 +87,177 @@
   place-items: center;
 }
 
+/*! Featured CSS */
+/*! Featured CSS */
+/*! Featured CSS */
+
 .featured_text {
   font-family: var(--font-secondary);
   font-size: var(--size-base);
   color: var(--clr-indigo);
 }
 
+.featured_title-con {
+  display: flex;
+}
+
+.featured_icon {
+  display: flex;
+  align-items: center;
+  padding-left: 0.3rem;
+  color: var(--clr-pink);
+}
+
+.subtitle {
+  font-family: var(--font-secondary);
+  font-size: var(--size-base);
+}
+
 .screenshot-con {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+/*! Project CSS */
+/*! Project CSS */
+/*! Project CSS */
+
+.project_title {
+  text-align: center;
+  font-size: var(--size-2xl);
+}
+
+.project_description {
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.project_content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  height: auto;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.project_link-con {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "website"
+    "details";
+  margin-bottom: 2rem;
+  place-items: center;
+  width: 100%;
+}
+
+.title {
+  grid-area: title;
+  padding-bottom: 1rem;
+}
+.website {
+  grid-area: website;
+  overflow: hidden;
+  width: 19rem;
+  height: 19rem;
+  cursor: pointer;
+}
+.details {
+  grid-area: details;
+}
+
+.tech_use-con {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  padding: 0;
+  font-family: var(--font-secondary);
+  font-size: var(--size-xs);
+  margin-bottom: 1rem;
+}
+
+.tech_use {
+  border: 2px solid var(--clr-pink);
+  border-radius: 1rem;
+  padding: 0.05rem 0.4rem;
+  cursor: default;
+}
+
+.tech_use:hover {
+  background-color: var(--clr-pink);
+  color: var(--clr-dark);
+}
+
+.website_img {
+  height: auto;
+  width: 100%;
+  transform: translateY(0%);
+  transition: transform 6s ease-in-out 0s;
+}
+
+.website_img:hover {
+  transform: translateY(-70%);
+  transition: transform 6s ease-in-out 0s;
+}
+
+.project_name {
+  text-align: center;
+  font-size: var(--size-xl);
+  font-weight: 600;
+}
+
+.project_btn-con {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.project_btn {
+  text-decoration: none;
+}
+
+/*! Contact CSS */
+/*! Contact CSS */
+/*! Contact CSS */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.contact_title {
+  font-size: var(--size-2xl);
+  color: var(--clr-light);
+  text-transform: capitalize;
+}
+
+.contact_description {
+  font-family: var(--font-secondary);
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+  max-width: 60ch;
+}
+
+.contact_btn {
+  font-size: var(--size-sm);
+}
+
+.footer_title {
+  text-align: center;
+  font-size: var(--size-xs);
+  font-weight: 500;
+  color: var(--clr-slate600);
 }
 
 /* xs */
@@ -114,8 +283,29 @@
     font-size: var(--size-base);
   }
 
-  .about_title {
-    font-size: var(--size-2xl);
+  .subtitle {
+    font-size: var(--size-lg);
+  }
+
+  .website {
+    width: 23rem;
+    height: 23rem;
+  }
+
+  .contact {
+    gap: 1.5rem;
+  }
+
+  .contact__title {
+    font-size: var(--size-3xl);
+  }
+
+  .contact__description {
+    font-size: var(--size-base);
+  }
+
+  .contact__btn {
+    font-size: var(--size-base);
   }
 }
 
@@ -124,8 +314,7 @@
   .about_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    'img desc';
+    grid-template-areas: "img desc";
     padding-bottom: 1rem;
   }
   .img {
@@ -134,12 +323,18 @@
 
   .desc {
     grid-area: desc;
+    padding-top: 2rem;
     padding-right: 1rem;
   }
 
   .logo-con {
     width: 8rem;
     height: 8rem;
+  }
+
+  .website {
+    width: 26rem;
+    height: 26rem;
   }
 }
 
@@ -153,6 +348,55 @@
   .logo-con {
     width: 8.5rem;
     height: 8.5rem;
+  }
+
+  .project_link-con {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "website title"
+      "website details"
+      "website ptech"
+      "website links";
+    margin-bottom: 0;
+    place-items: center;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .website {
+    grid-area: website;
+    width: 22.5rem;
+    height: 22.5rem;
+  }
+  .title {
+    grid-area: title;
+    padding-top: 2rem;
+  }
+  .details {
+    grid-area: details;
+    padding-top: 2rem;
+    margin: 0;
+  }
+  .ptech {
+    grid-area: ptech;
+  }
+  .links {
+    grid-area: links;
+    padding-bottom: 2rem;
+    gap: 3rem;
+  }
+
+  .opposite {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "title website"
+      "details website"
+      "ptech website"
+      "links website";
+    place-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -183,7 +427,7 @@
   .about_title {
     font-size: var(--size-3xl);
   }
-  
+
   .description {
     font-size: var(--size-base);
   }
@@ -191,6 +435,10 @@
   .about_img {
     width: 23rem;
     height: 30rem;
+  }
+
+  .featured_text {
+    font-size: var(--size-lg);
   }
 
   .tech {
@@ -203,6 +451,40 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+
+  .project_title {
+    font-size: var(--size-3xl);
+  }
+  
+  .project_name {
+    font-size: var(--size-2xl);
+  }
+  
+  .project_description {
+    font-size: var(--size-base);
+  }
+
+  .project_link-con {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .website {
+    width: 24.5rem;
+    height: 24.5rem;
+  }
+
+  .contact__title {
+    font-size: var(--size-4xl);
+  }
+
+  .contact__description {
+    font-size: var(--size-lg);
+  }
+
+  .contact__btn {
+    font-size: var(--size-lg);
   }
 }
 
@@ -238,6 +520,32 @@
     padding-left: 9rem;
     padding-right: 9rem;
   }
+
+  .project_link-con {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
+  .website {
+    width: 26.5rem;
+    height: 26.5rem;
+  }
+
+  .contact {
+    gap: 2rem;
+  }
+
+  .contact__title {
+    font-size: var(--size-5xl);
+  }
+
+  .contact__description {
+    font-size: var(--size-xl);
+  }
+
+  .contact__btn {
+    font-size: var(--size-xl);
+  }
 }
 
 /* 2xl */
@@ -250,5 +558,15 @@
   .tech {
     padding-left: 13rem;
     padding-right: 13rem;
+  }
+
+  .project_link-con {
+    padding-left: 19rem;
+    padding-right: 19rem;
+  }
+
+  .website {
+    width: 28.5rem;
+    height: 28.5rem;
   }
 }

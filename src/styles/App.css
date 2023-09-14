@@ -88,13 +88,9 @@ strong {
   color: var(--clr-indigo);
 }
 
-a {
-  color: var(--clr-pink);
-}
-
 /*? Scrollbar */
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 body::-webkit-scrollbar-track {

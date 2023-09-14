@@ -46,6 +46,21 @@
               0 0 120px -10px var(--clr-pink);
 }
 
+.bbtn {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-family: var(--font-secondary);
+  font-size: var(--size-xs);
+  font-weight: 600;
+  color: var(--clr-light);
+  transition: color 0.3s ease-in-out;
+}
+
+.bbtn:hover {
+  color: var(--clr-pink);
+}
+
 /* xs */
 /* @media (min-width: 475px) {} */
 
@@ -63,6 +78,10 @@
 @media (min-width: 1024px) {
   .hbtn {
     font-size: var(--size-base);
+  }
+
+  .bbtn {
+    font-size: var(--size-sm);
   }
 }
 

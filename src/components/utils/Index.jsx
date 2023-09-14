@@ -5,7 +5,7 @@ export const Logo = ({logo}) => {
   return (
     <>
       <div className='logo-con'>
-        <img src={icon} alt={name} />
+        <img src={icon} alt={name} title={name}/>
       </div>
     </>
   )

@@ -12,13 +12,25 @@ export const RButton = ({buttonClick, displayText = 'Submit'}) => {
   )
 }
 
-//* hero Button
+//* Hero Button
 export const HButton = ({buttonClick, displayText = 'Reach Out'}) => {
   return (
     <button 
       className='hbtn'
       onClick={buttonClick}>
         {displayText}
+    </button>
+  )
+}
+
+//* Normal Button
+export const NButton = ({buttonClick, icon = '', displayText = 'Link'}) => {
+  return (
+    <button 
+      className='bbtn'
+      onClick={buttonClick}>
+        {displayText}
+        {icon}
     </button>
   )
 }
