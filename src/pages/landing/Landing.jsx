@@ -222,12 +222,12 @@ function Landing({skillIcon, covape}) {
         </div>
       </section>
       <section id="contact" className="contact container section">
-        <h3 className="about_title">Get In Contact</h3>
+        <h3 className="contact_title">Get In Contact</h3>
         <p className="contact_description">
           Whether you are starting a project, have business inquiries or just want to say hi, 
           my inbox is always open so feel free to reach out and I will get back to you as soon as possible.
         </p>
-        <a className="contact_btn btn" href="#contact" target="_blank" rel='noreferrer'>
+        <a className="btn" href="#contact" target="_blank" rel='noreferrer'>
           <HButton/>
         </a>
       </section>

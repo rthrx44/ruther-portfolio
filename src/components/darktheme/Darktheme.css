@@ -4,8 +4,8 @@
   align-items: center;
   background: none;
   border: none;
-  height: var(--size-base);
-  width: var(--size-base);
+  height: var(--size-xl);
+  width: var(--size-xl);
   color: var(--clr-light);
   transition: .3s ease-out;
   padding: 0;
@@ -15,31 +15,3 @@
 .theme_toggle:hover {
   color: var(--clr-pink);
 }
-
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
-@media (min-width: 768px) {
-  .theme_toggle {
-    height: var(--size-sm);
-    width: var(--size-sm);
-  }
-}
-
-/* lg */
-@media (min-width: 1024px) {
-  .theme_toggle {
-    height: var(--size-base);
-    width: var(--size-base);
-  }
-}
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */

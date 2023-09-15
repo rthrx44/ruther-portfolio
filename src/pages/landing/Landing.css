@@ -80,9 +80,14 @@
 .tech {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  row-gap: 1rem;
   margin-top: 2rem;
   place-items: center;
+}
+
+.logo-con {
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 /*! Featured CSS */
@@ -354,6 +359,10 @@
     font-size: var(--size-lg);
   }
 
+  .tech {
+    row-gap: 2rem;
+  }
+
   .website {
     width: 23rem;
     height: 23rem;
@@ -380,6 +389,11 @@
     height: 5rem;
     font-size: var(--size-sm);
   }
+
+  .logo-con {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 /* sm */
@@ -405,8 +419,8 @@
   }
 
   .logo-con {
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   .website {
@@ -428,7 +442,7 @@
   }
 
   .tech {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
   }
 
   .featured_content {
@@ -453,8 +467,8 @@
   }
 
   .logo-con {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .project_link-con {
@@ -483,6 +497,8 @@
   .details {
     grid-area: details;
     padding-top: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin: 0;
   }
   .ptech {
@@ -515,15 +531,15 @@
   }
 
   .hero_subtitle {
-    font-size: var(--size-2xl);
+    font-size: var(--size-3xl);
   }
 
   .hero_title {
-    font-size: var(--size-7xl);
+    font-size: var(--size-8xl);
   }
 
   .hero_description {
-    font-size: var(--size-lg);
+    font-size: var(--size-xl);
   }
 
   .about_content {
@@ -532,11 +548,11 @@
   }
 
   .about_title {
-    font-size: var(--size-3xl);
+    font-size: var(--size-4xl);
   }
 
   .description {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
   }
 
   .about_img {
@@ -545,17 +561,17 @@
   }
 
   .featured-con {
-    margin-right: 3rem;
+    margin-right: 1rem;
   }
 
   .use_tech {
     width: 5rem;
     height: 5rem;
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
   }
 
   .featured_text {
-    font-size: var(--size-lg);
+    font-size: var(--size-xl);
   }
 
   .tech {
@@ -563,8 +579,8 @@
   }
 
   .logo-con {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   .screenshot-con {
@@ -574,15 +590,15 @@
   }
 
   .project_title {
-    font-size: var(--size-3xl);
+    font-size: var(--size-4xl);
   }
   
   .project_name {
-    font-size: var(--size-2xl);
+    font-size: var(--size-3xl);
   }
   
   .project_description {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
   }
 
   .project_link-con {
@@ -595,15 +611,11 @@
     height: 24.5rem;
   }
 
-  .contact__title {
+  .contact_title {
     font-size: var(--size-4xl);
   }
 
-  .contact__description {
-    font-size: var(--size-lg);
-  }
-
-  .contact__btn {
+  .contact_description {
     font-size: var(--size-lg);
   }
 }
@@ -619,18 +631,6 @@
     height: 9rem;
   }
 
-  .hero_subtitle {
-    font-size: var(--size-3xl);
-  }
-
-  .hero_title {
-    font-size: var(--size-8xl);
-  }
-
-  .hero_description {
-    font-size: var(--size-xl);
-  }
-
   .about_content {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -643,12 +643,11 @@
   .use_tech {
     width: 6rem;
     height: 6rem;
-    font-size: var(--size-base);
   }
 
   .logo-con {
-    width: 9rem;
-    height: 9rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   .project_link-con {
@@ -663,18 +662,6 @@
 
   .contact {
     gap: 2rem;
-  }
-
-  .contact__title {
-    font-size: var(--size-5xl);
-  }
-
-  .contact__description {
-    font-size: var(--size-xl);
-  }
-
-  .contact__btn {
-    font-size: var(--size-xl);
   }
 }
 
@@ -691,8 +678,8 @@
   }
 
   .logo-con {
-    width: 11rem;
-    height: 11rem;
+    width: 7rem;
+    height: 7rem;
   }
 
   .project_link-con {

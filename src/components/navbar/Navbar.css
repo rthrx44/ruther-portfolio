@@ -134,7 +134,11 @@
 }
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+  .nav_links {
+    font-size: var(--size-sm);
+  }
+}
 
 /* xl */
 /* @media (min-width: 1280px) {} */
