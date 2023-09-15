@@ -130,14 +130,14 @@ function Landing({skillIcon, covape}) {
       </section>
       <section className='projects container section'>
         <h3 className='project_title'>Projects</h3>
-        <p className='project_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
+        <p className='project_description'>Each project is a unique piece of development. <br/>Designed with a stunning pixel-perfect interactive user experience.<br/>Suitable for both small and large device screens.</p>
         <div className='project_content'>
           <div className='project_link-con'>
             <div className='project_img website'>
               <img className='website_img lazy loading' src={Tictactoe} data-src={Tictactoe} alt="Tic Tac Toe" title='Website Preview'/>
             </div>
             <p className='project_name title'>Tic Tac Toe</p>
-            <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
+            <p className='project_description details'>A simple tic tac toe website. <br/>A game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares..</p>
             <div className='project_tech ptech'>
               <ul className='tech_use-con'>
                 <li className='tech_use'>HTML</li>
