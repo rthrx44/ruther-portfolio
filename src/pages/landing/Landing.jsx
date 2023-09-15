@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/Navbar'
 import Ruther01 from '../../components/assets/Ruther01.png'
 import Ruther02 from '../../components/assets/Ruther02.png'
 import Covape_Landing from '../../components/assets/Covape_Landing.jpeg'
+import Tictactoe from '../../components/assets/Tik-Tac-Toe.png'
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { HButton, NButton } from '../../components/buttons/Buttons'
@@ -133,22 +134,22 @@ function Landing({skillIcon, covape}) {
         <div className='project_content'>
           <div className='project_link-con'>
             <div className='project_img website'>
-              <img className='website_img lazy loading' src={Covape_Landing} data-src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
+              <img className='website_img lazy loading' src={Tictactoe} data-src={Tictactoe} alt="Tic Tac Toe" title='Website Preview'/>
             </div>
-            <p className='project_name title'>Covape-19 Garage</p>
+            <p className='project_name title'>Tic Tac Toe</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
             <div className='project_tech ptech'>
               <ul className='tech_use-con'>
+                <li className='tech_use'>HTML</li>
                 <li className='tech_use'>CSS</li>
-                <li className='tech_use'>ReactJS</li>
-                <li className='tech_use'>SwiperJS</li>
+                <li className='tech_use'>JavaScript</li>
               </ul>
             </div>
             <div className='project_btn-con links'>
-              <a className='project_btn' href='https://github.com/rthrx44/covape-19-garage' target='_blank' rel='noreferrer' title='Website Github Link'>
+              <a className='project_btn' href='https://github.com/rthrx44/Tictactoe' target='_blank' rel='noreferrer' title='Website Github Link'>
                 <NButton displayText='Source Code' icon={<GitHubIcon/>}/>
               </a>
-              <a className='project_btn' href='https://covape-19-garage-rthrx44.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
+              <a className='project_btn' href='https://tictactoe-rthrx44.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
                 <NButton displayText='Live Demo' icon={<OpenInNewRoundedIcon/>}/>
               </a>
             </div>

@@ -1,4 +1,4 @@
-<div align='center'><img style="width:30%;border-radius:50%;" src='./src/components/assets/Ruther01.png'/></div>
+<div align='center'><img style="width:30%;border-radius:50%" src='./src/components/assets/Ruther01.png'/></div>
 
 <h2>About the project ❓</h2>
 
