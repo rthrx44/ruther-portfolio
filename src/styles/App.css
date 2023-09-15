@@ -32,7 +32,10 @@
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Roboto', sans-serif;
 }
-* {
+
+*,
+*::before,
+*::after {
   margin: 0;
   line-height: calc(1em + 0.5rem);
   box-sizing: border-box;

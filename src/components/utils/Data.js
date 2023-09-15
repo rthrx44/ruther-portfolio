@@ -94,26 +94,32 @@ export const skillIcon = [
 export const covape = [
   {
     id: 1,
+    title: 'Landing Page',
     image: Covape01
   },
   {
     id: 2,
+    title: 'Sign-In',
     image: Covape02
   },
   {
     id: 3,
+    title: 'Dashboard',
     image: Covape03
   },
   {
     id: 4,
+    title: 'Products',
     image: Covape04
   },
   {
     id: 5,
+    title: 'Product Information',
     image: Covape05
   },
   {
     id: 6,
+    title: 'Cart',
     image: Covape06
   },
 ]

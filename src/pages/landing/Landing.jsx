@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Landing.css'
 import Navbar from '../../components/navbar/Navbar'
 import Ruther01 from '../../components/assets/Ruther01.png'
@@ -12,6 +12,34 @@ import { Logo, Screenshot } from '../../components/utils/Index'
 
 
 function Landing({skillIcon, covape}) {
+  useEffect(() => {
+    const images = document.querySelectorAll(".lazy");
+
+    function preloadImage (img) {
+      const src = img.getAttribute('data-src');
+      if (!src) {
+        return
+      }
+      img.src = src
+    }
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      console.log("entries", entries);
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return
+        } else {
+          preloadImage(entry.target);
+          observer.unobserve(entry.target);
+          entry.target.classList.remove('loading')
+          entry.target.classList.add('loaded')
+        }
+      });
+    });
+
+    images.forEach(image => (observer.observe(image)))
+  }, []);
+
   return (
     <>
     <main>
@@ -45,7 +73,7 @@ function Landing({skillIcon, covape}) {
             </div>
           </div>
           <div className='about_img-con img'>
-            <img className='about_img' src={Ruther02} alt="Ruther Dio Profile" />
+            <img className='about_img lazy loading' src={Ruther02} data-src={Ruther02} alt="Ruther Dio Profile" />
           </div>
         </div>
       </section>
@@ -74,25 +102,23 @@ function Landing({skillIcon, covape}) {
           </div>
           <div className='featured-tech'>
             <h5 className='subtitle'>Tech Tools Use</h5>
-            <p className='description'>
-              <div className='use_tech-con'>
-                <div className='use_tech'>
-                  <h5>HTML</h5>
-                </div>
-                <div className='use_tech'>
-                  <h5>CSS</h5>
-                </div>
-                <div className='use_tech'>
-                  <h5>JavaScript</h5>
-                </div>
-                <div className='use_tech'>
-                  <h5>React</h5>
-                </div>
-                <div className='use_tech'>
-                  <h5>SwiperJS</h5>
-                </div>
+            <div className='use_tech-con'>
+              <div className='use_tech'>
+                <h5>HTML</h5>
               </div>
-            </p>
+              <div className='use_tech'>
+                <h5>CSS</h5>
+              </div>
+              <div className='use_tech'>
+                <h5>JavaScript</h5>
+              </div>
+              <div className='use_tech'>
+                <h5>React</h5>
+              </div>
+              <div className='use_tech'>
+                <h5>SwiperJS</h5>
+              </div>
+            </div>
           </div>
         </div>
         <div className='screenshot-con'>
@@ -107,7 +133,7 @@ function Landing({skillIcon, covape}) {
         <div className='project_content'>
           <div className='project_link-con'>
             <div className='project_img website'>
-              <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
+              <img className='website_img lazy loading' src={Covape_Landing} data-src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
             </div>
             <p className='project_name title'>Covape-19 Garage</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
@@ -129,7 +155,7 @@ function Landing({skillIcon, covape}) {
           </div>
           <div className='project_link-con opposite'>
             <div className='project_img website'>
-              <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
+              <img className='website_img lazy loading' src={Covape_Landing} data-src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
             </div>
             <p className='project_name title'>Covape-19 Garage</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
@@ -151,7 +177,7 @@ function Landing({skillIcon, covape}) {
           </div>
           <div className='project_link-con'>
             <div className='project_img website'>
-              <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
+              <img className='website_img lazy loading' src={Covape_Landing} data-src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
             </div>
             <p className='project_name title'>Covape-19 Garage</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
@@ -173,7 +199,7 @@ function Landing({skillIcon, covape}) {
           </div>
           <div className='project_link-con opposite'>
             <div className='project_img website'>
-              <img className='website_img' src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
+              <img className='website_img lazy loading' src={Covape_Landing} data-src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
             </div>
             <p className='project_name title'>Covape-19 Garage</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
