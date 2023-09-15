@@ -25,7 +25,6 @@ function Landing({skillIcon, covape}) {
     }
 
     const observer = new IntersectionObserver((entries, observer) => {
-      console.log("entries", entries);
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
           return
