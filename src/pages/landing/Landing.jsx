@@ -227,7 +227,7 @@ function Landing({skillIcon, covape}) {
           Whether you are starting a project, have business inquiries or just want to say hi, 
           my inbox is always open so feel free to reach out and I will get back to you as soon as possible.
         </p>
-        <a className="btn" href="#contact" target="_blank" rel='noreferrer'>
+        <a className="btn" href="mailto:ruther.diox04@gmail.com" target="_blank" rel='noreferrer'>
           <HButton/>
         </a>
       </section>
