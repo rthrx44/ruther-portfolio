@@ -202,7 +202,7 @@ function Landing({skillIcon, covape}) {
             <div className='project_img website'>
               <img className='website_img lazy loading' src={Banking} data-src={Banking} alt="Banking/Budget App" title='Website Preview'/>
             </div>
-            <p className='project_name title'>Bankking/Budget App <br/>(Collaboration)</p>
+            <p className='project_name title'>Banking/Budget App <br/>(Collaboration)</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
             <div className='project_tech ptech'>
               <ul className='tech_use-con'>
