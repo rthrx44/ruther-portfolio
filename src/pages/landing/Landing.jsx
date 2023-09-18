@@ -5,6 +5,9 @@ import Ruther01 from '../../components/assets/Ruther01.png'
 import Ruther02 from '../../components/assets/Ruther02.png'
 import Covape_Landing from '../../components/assets/Covape_Landing.jpeg'
 import Tictactoe from '../../components/assets/Tik-Tac-Toe.png'
+import Ambiance from '../../components/assets/Ambiance.png'
+import Banking from '../../components/assets/Banking.png'
+import Slack from '../../components/assets/Slack.png'
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { HButton, NButton } from '../../components/buttons/Buttons'
@@ -155,66 +158,64 @@ function Landing({skillIcon, covape}) {
           </div>
           <div className='project_link-con opposite'>
             <div className='project_img website'>
-              <img className='website_img lazy loading' src={Covape_Landing} data-src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
+              <img className='website_img lazy loading' src={Ambiance} data-src={Ambiance} alt="Ambiance Interior Design Studio" title='Website Preview'/>
             </div>
-            <p className='project_name title'>Covape-19 Garage</p>
-            <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
+            <p className='project_name title'>Ambiance <br/>Interior Design Studio</p>
+            <p className='project_description details'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam modi asperiores quasi neque laudantium maiores ipsam enim aperiam odit, voluptatibus laborum ullam magnam natus explicabo doloribus distinctio.</p>
             <div className='project_tech ptech'>
               <ul className='tech_use-con'>
-                <li className='tech_use'>CSS</li>
+                <li className='tech_use'>Tailwind CSS</li>
                 <li className='tech_use'>ReactJS</li>
-                <li className='tech_use'>SwiperJS</li>
               </ul>
             </div>
             <div className='project_btn-con links'>
-              <a className='project_btn' href='https://github.com/rthrx44/covape-19-garage' target='_blank' rel='noreferrer' title='Website Github Link'>
+              <a className='project_btn' href='https://github.com/rthrx44/ambiance-website' target='_blank' rel='noreferrer' title='Website Github Link'>
                 <NButton displayText='Source Code' icon={<GitHubIcon/>}/>
               </a>
-              <a className='project_btn' href='https://covape-19-garage-rthrx44.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
+              <a className='project_btn' href='https://ambiance-website.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
                 <NButton displayText='Live Demo' icon={<OpenInNewRoundedIcon/>}/>
               </a>
             </div>
           </div>
           <div className='project_link-con'>
             <div className='project_img website'>
-              <img className='website_img lazy loading' src={Covape_Landing} data-src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
+              <img className='website_img lazy loading' src={Slack} data-src={Slack} alt="Slack" title='Website Preview'/>
             </div>
-            <p className='project_name title'>Covape-19 Garage</p>
+            <p className='project_name title'>Slack App <br/>(Collaboration)</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
             <div className='project_tech ptech'>
               <ul className='tech_use-con'>
                 <li className='tech_use'>CSS</li>
                 <li className='tech_use'>ReactJS</li>
-                <li className='tech_use'>SwiperJS</li>
               </ul>
             </div>
             <div className='project_btn-con links'>
-              <a className='project_btn' href='https://github.com/rthrx44/covape-19-garage' target='_blank' rel='noreferrer' title='Website Github Link'>
+              <a className='project_btn' href='https://github.com/rthrx44/slack-app-batch26' target='_blank' rel='noreferrer' title='Website Github Link'>
                 <NButton displayText='Source Code' icon={<GitHubIcon/>}/>
               </a>
-              <a className='project_btn' href='https://covape-19-garage-rthrx44.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
+              <a className='project_btn' href='https://slack-app-batch26.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
                 <NButton displayText='Live Demo' icon={<OpenInNewRoundedIcon/>}/>
               </a>
             </div>
           </div>
           <div className='project_link-con opposite'>
             <div className='project_img website'>
-              <img className='website_img lazy loading' src={Covape_Landing} data-src={Covape_Landing} alt="Covape-19 Garage" title='Website Preview'/>
+              <img className='website_img lazy loading' src={Banking} data-src={Banking} alt="Banking/Budget App" title='Website Preview'/>
             </div>
-            <p className='project_name title'>Covape-19 Garage</p>
+            <p className='project_name title'>Bankking/Budget App <br/>(Collaboration)</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
             <div className='project_tech ptech'>
               <ul className='tech_use-con'>
-                <li className='tech_use'>CSS</li>
+                <li className='tech_use'>SCSS</li>
                 <li className='tech_use'>ReactJS</li>
-                <li className='tech_use'>SwiperJS</li>
+                <li className='tech_use'>JavaScript</li>
               </ul>
             </div>
             <div className='project_btn-con links'>
-              <a className='project_btn' href='https://github.com/rthrx44/covape-19-garage' target='_blank' rel='noreferrer' title='Website Github Link'>
+              <a className='project_btn' href='https://github.com/hnbmunoz/bank-and-budget' target='_blank' rel='noreferrer' title='Website Github Link'>
                 <NButton displayText='Source Code' icon={<GitHubIcon/>}/>
               </a>
-              <a className='project_btn' href='https://covape-19-garage-rthrx44.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
+              <a className='project_btn' href='https://bank-and-budget.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
                 <NButton displayText='Live Demo' icon={<OpenInNewRoundedIcon/>}/>
               </a>
             </div>
