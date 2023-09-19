@@ -3,13 +3,14 @@ import './Landing.css'
 import Navbar from '../../components/navbar/Navbar'
 import Ruther01 from '../../components/assets/Ruther01.png'
 import Ruther02 from '../../components/assets/Ruther02.png'
-import Covape_Landing from '../../components/assets/Covape_Landing.jpeg'
 import Tictactoe from '../../components/assets/Tik-Tac-Toe.png'
 import Ambiance from '../../components/assets/Ambiance.png'
 import Banking from '../../components/assets/Banking.png'
 import Slack from '../../components/assets/Slack.png'
+import DeveloperBoardRoundedIcon from '@mui/icons-material/DeveloperBoardRounded';
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { HButton, NButton } from '../../components/buttons/Buttons'
 import { Logo, Screenshot } from '../../components/utils/Index'
 
@@ -172,6 +173,9 @@ function Landing({skillIcon, covape}) {
               <a className='project_btn' href='https://github.com/rthrx44/ambiance-website' target='_blank' rel='noreferrer' title='Website Github Link'>
                 <NButton displayText='Source Code' icon={<GitHubIcon/>}/>
               </a>
+              <a className='project_btn' href='https://xd.adobe.com/view/e869d8be-1df1-4c7d-bb71-228cf1b8181a-bd3a/specs/' target='_blank' rel='noreferrer' title='Mock-up Design Link'>
+                <NButton displayText='Mock-up' icon={<DeveloperBoardRoundedIcon/>}/>
+              </a>
               <a className='project_btn' href='https://ambiance-website.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
                 <NButton displayText='Live Demo' icon={<OpenInNewRoundedIcon/>}/>
               </a>
@@ -234,6 +238,14 @@ function Landing({skillIcon, covape}) {
       </section>
     </main>
     <footer className='footer container section'>
+      <div className='footer_social'>
+        <div>
+          <a className='footer_link' href="https://github.com/rthrx44" target='_blank' rel='noreferrer' title='Github Profile Link'><GitHubIcon sx={{fontSize:28}}/></a>
+        </div>
+        <div>
+          <a className='footer_link' href="https://www.linkedin.com/in/ruther-dio-b3058b248/" target='_blank' rel='noreferrer' title='LinkedIn Profile Link'><LinkedInIcon sx={{fontSize:28}}/></a>
+        </div>
+      </div>
       <h3 className="footer_title">Copyright © 2023 Ruther R. Dio.</h3>
     </footer>
     </>

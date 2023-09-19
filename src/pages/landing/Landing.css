@@ -268,11 +268,13 @@
   border-radius: 1rem;
   padding: 0.05rem 0.4rem;
   cursor: default;
+  transition: 0.3s ease-in-out;
 }
 
 .tech_use:hover {
   background-color: var(--clr-pink);
   color: var(--clr-dark);
+  transition: 0.3s ease-in-out;
 }
 
 .project_name {
@@ -324,6 +326,24 @@
 /*! Footer CSS */
 /*! Footer CSS */
 /*! Footer CSS */
+
+.footer_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  gap: 1.5rem;
+}
+
+.footer_link {
+  color: var(--clr-slate400);
+  transition: 0.3s ease-in-out;
+}
+
+.footer_link:hover {
+  color: var(--clr-pink);
+  transition: 0.3s ease-in-out;
+}
 
 .footer_title {
   text-align: center;
