@@ -135,8 +135,8 @@ function Landing({skillIcon, covape}) {
         <p className='project_description'>Each project is a unique piece of development. <br/>Designed with a stunning pixel-perfect interactive user experience.<br/>Suitable for both small and large device screens.</p>
         <div className='project_content'>
           <div className='project_link-con'>
-            <div className='project_img website'>
-              <img className='website_img lazy loading' src={Tictactoe} data-src={Tictactoe} alt="Tic Tac Toe" title='Website Preview'/>
+            <div className='project_img website lazy loading'>
+              <img className='website_img' src={Tictactoe} data-src={Tictactoe} alt="Tic Tac Toe" title='Website Preview'/>
             </div>
             <p className='project_name title'>Tic Tac Toe</p>
             <p className='project_description details'>A simple tic tac toe website. <br/>A game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares..</p>
@@ -157,8 +157,8 @@ function Landing({skillIcon, covape}) {
             </div>
           </div>
           <div className='project_link-con opposite'>
-            <div className='project_img website'>
-              <img className='website_img lazy loading' src={Ambiance} data-src={Ambiance} alt="Ambiance Interior Design Studio" title='Website Preview'/>
+            <div className='project_img website lazy loading'>
+              <img className='website_img' src={Ambiance} data-src={Ambiance} alt="Ambiance Interior Design Studio" title='Website Preview'/>
             </div>
             <p className='project_name title'>Ambiance <br/>Interior Design Studio</p>
             <p className='project_description details'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam modi asperiores quasi neque laudantium maiores ipsam enim aperiam odit, voluptatibus laborum ullam magnam natus explicabo doloribus distinctio.</p>
@@ -178,8 +178,8 @@ function Landing({skillIcon, covape}) {
             </div>
           </div>
           <div className='project_link-con'>
-            <div className='project_img website'>
-              <img className='website_img lazy loading' src={Slack} data-src={Slack} alt="Slack" title='Website Preview'/>
+            <div className='project_img website lazy loading'>
+              <img className='website_img' src={Slack} data-src={Slack} alt="Slack" title='Website Preview'/>
             </div>
             <p className='project_name title'>Slack App <br/>(Collaboration)</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
@@ -198,9 +198,9 @@ function Landing({skillIcon, covape}) {
               </a>
             </div>
           </div>
-          <div className='project_link-con opposite'>
-            <div className='project_img website'>
-              <img className='website_img lazy loading' src={Banking} data-src={Banking} alt="Banking/Budget App" title='Website Preview'/>
+          <div className='project_link-con opposite'  >
+            <div className='project_img website lazy loading'>
+              <img className='website_img' src={Banking} data-src={Banking} alt="Banking/Budget App" title='Website Preview'/>
             </div>
             <p className='project_name title'>Banking/Budget App <br/>(Collaboration)</p>
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
