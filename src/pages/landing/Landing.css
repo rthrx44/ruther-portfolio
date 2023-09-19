@@ -491,6 +491,12 @@
     height: 3.5rem;
   }
 
+  .screenshot-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
   .project_link-con {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -507,8 +513,8 @@
 
   .website {
     grid-area: website;
-    width: 22.5rem;
-    height: 22.5rem;
+    width: 22rem;
+    height: 22rem;
   }
   .title {
     grid-area: title;
@@ -603,12 +609,6 @@
     height: 5rem;
   }
 
-  .screenshot-con {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
   .project_title {
     font-size: var(--size-4xl);
   }
@@ -627,8 +627,8 @@
   }
 
   .website {
-    width: 24.5rem;
-    height: 24.5rem;
+    width: 24rem;
+    height: 24rem;
   }
 
   .contact_title {
@@ -676,8 +676,8 @@
   }
 
   .website {
-    width: 26.5rem;
-    height: 26.5rem;
+    width: 26rem;
+    height: 26rem;
   }
 
   .contact {
@@ -708,7 +708,7 @@
   }
 
   .website {
-    width: 28.5rem;
-    height: 28.5rem;
+    width: 28rem;
+    height: 28rem;
   }
 }
