@@ -133,7 +133,7 @@ function Landing({skillIcon, covape}) {
       </section>
       <section className='projects container section'>
         <h3 className='project_title'>Projects</h3>
-        <p className='project_description'>Each project is a unique piece of development. <br/>Designed with a stunning pixel-perfect interactive user experience.<br/>Suitable for both small and large device screens.</p>
+        <p className='project_description'>Each project is a unique piece of development. <br/>Designed with a stunning pixel-perfect interactive user experience.<br/>Viewable from small to large screens.</p>
         <div className='project_content'>
           <div className='project_link-con'>
             <div className='project_img website lazy loading'>
