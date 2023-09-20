@@ -4,6 +4,7 @@ import Darktheme from '../darktheme/Darktheme'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { RButton } from '../buttons/Buttons';
+import Resume from '../assets/Resume.pdf'
 
 function Navbar() {
 
@@ -49,7 +50,7 @@ function Navbar() {
             </li>
             <li className='mobile-nav_line'></li>
             <Darktheme/>
-            <RButton displayText='Resume'/>
+            <a href={Resume} download target='_blank' rel='noreferrer' title='Download Resume'><RButton displayText='Resume'/></a>
           </ul>  
         </nav>
       }
@@ -67,7 +68,7 @@ function Navbar() {
             </li>
             <li className='nav_line'></li>
             <Darktheme/>
-            <RButton displayText='Resume'/>
+            <a href={Resume} download target='_blank' rel='noreferrer' title='Download Resume'><RButton displayText='Resume'/></a>
           </ul>  
           <button className='hamburger_menu' onClick={handletoggle}>{toggleIcon}</button>
         </nav>
