@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Landing.css'
 import Navbar from '../../components/navbar/Navbar'
 import Ruther01 from '../../components/assets/Ruther01.png'
@@ -9,6 +9,7 @@ import Banking from '../../components/assets/Banking.png'
 import Slack from '../../components/assets/Slack.png'
 import DeveloperBoardRoundedIcon from '@mui/icons-material/DeveloperBoardRounded';
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
+import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { HButton, NButton } from '../../components/buttons/Buttons'
@@ -44,6 +45,25 @@ function Landing({skillIcon, covape}) {
     images.forEach(image => (observer.observe(image)))
   }, []);
 
+  const [backToTop, setBackToTop] = useState(false);
+
+    useEffect(() => {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          setBackToTop(true)
+        } else {
+          setBackToTop(false)
+        }
+      })
+    }, [])
+
+    const scrollUp = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    }
+
   return (
     <>
     <main>
@@ -59,6 +79,9 @@ function Landing({skillIcon, covape}) {
           Specialized in building stunning pixel-perfect interactive websites.
         </p>
         <a href="#contact"><HButton/></a>
+      </section>
+      <section>
+        {backToTop && <div className='up' onClick={scrollUp} title='Scroll to top'><ArrowUpwardRoundedIcon className='arrow'/></div>}
       </section>
       <section id='about' className='about container section'>
         <div className='about_content'>
@@ -162,11 +185,12 @@ function Landing({skillIcon, covape}) {
               <img className='website_img' src={Ambiance} data-src={Ambiance} alt="Ambiance Interior Design Studio" title='Website Preview'/>
             </div>
             <p className='project_name title'>Ambiance <br/>Interior Design Studio</p>
-            <p className='project_description details'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam modi asperiores quasi neque laudantium maiores ipsam enim aperiam odit, voluptatibus laborum ullam magnam natus explicabo doloribus distinctio.</p>
+            <p className='project_description details'>A website that is mobile-friendly and showcases the process of building, planning, and designing an interior.</p>
             <div className='project_tech ptech'>
               <ul className='tech_use-con'>
                 <li className='tech_use'>Tailwind CSS</li>
                 <li className='tech_use'>ReactJS</li>
+                <li className='tech_use'>SwiperJS</li>
               </ul>
             </div>
             <div className='project_btn-con links'>

@@ -37,6 +37,29 @@
   letter-spacing: 0.06em;
 }
 
+.up {
+  background-color: var(--clr-pink);
+  border-radius: 3rem;
+  position: fixed;
+  right: 9%;
+  bottom: 6.5%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: var(--size-3xl);
+  width: var(--size-3xl);
+  color: #eff6ff;
+  z-index: 999999;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.up:hover {
+  outline: 1px solid var(--clr-pink);
+  outline-offset: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
 /*! About CSS */
 /*! About CSS */
 /*! About CSS */
@@ -286,7 +309,7 @@
 .project_btn-con {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .project_btn {
@@ -375,6 +398,10 @@
     font-size: var(--size-base);
   }
 
+  .up {
+    display: flex;
+  }
+
   .subtitle {
     font-size: var(--size-lg);
   }
@@ -456,6 +483,11 @@
 
 /* md */
 @media (min-width: 768px) {
+  .up {
+    height: var(--size-4xl);
+    width: var(--size-4xl);
+  }
+
   .about_img {
     width: 20rem;
     height: 27rem;
@@ -566,6 +598,14 @@
 
   .hero_description {
     font-size: var(--size-xl);
+  }
+
+  .up {
+    display: flex;
+    right: 6%;
+    bottom: 6.5%;
+    height: var(--size-5xl);
+    width: var(--size-5xl);
   }
 
   .about_content {
