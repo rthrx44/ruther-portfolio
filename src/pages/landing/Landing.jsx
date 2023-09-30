@@ -92,7 +92,7 @@ function Landing({skillIcon, covape}) {
                 Hi again! I'm Ruther Dio, a <strong>Front-end Web Developer</strong> based in <b>Bulacan, Philippines.</b>
               </p>
               <p className='description'>
-                I design, build, and maintain responsive websites that offer a smooth user experience. I am capable of working with others to create a website. I'm also good at researching through the internet to fix all the errors in my code.
+                I design, build, and maintain responsive websites that offer a smooth user experience. I am capable of working with others to create a website. I'm also good at researching solutions online to debug all the errors in my code.
               </p>
               <p className='description'>
                 When I'm not coding, I tend to watch movies, anime, and read manga. 
