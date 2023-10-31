@@ -50,7 +50,7 @@ function Navbar() {
             </li>
             <li className='mobile-nav_line'></li>
             <Darktheme/>
-            <a href={Resume} download target='_blank' rel='noreferrer' title='Download Resume'><RButton displayText='Resume'/></a>
+            <a href={Resume} download title='Download Resume'><RButton displayText='Resume'/></a>
           </ul>  
         </nav>
       }
@@ -68,7 +68,7 @@ function Navbar() {
             </li>
             <li className='nav_line'></li>
             <Darktheme/>
-            <a href={Resume} download target='_blank' rel='noreferrer' title='Download Resume'><RButton displayText='Resume'/></a>
+            <a href={Resume} download title='Download Resume'><RButton displayText='Resume'/></a>
           </ul>  
           <button className='hamburger_menu' onClick={handletoggle}>{toggleIcon}</button>
         </nav>
