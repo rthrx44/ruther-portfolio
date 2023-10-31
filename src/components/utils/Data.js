@@ -11,7 +11,7 @@ import JavaScript from '../assets/svg/JavaScript.svg';
 import MaterialUI from '../assets/svg/MaterialUI-Dark.svg';
 import Photoshop from '../assets/svg/Photoshop.svg';
 import React from '../assets/svg/React-Dark.svg';
-import StackOverflow from '../assets/svg/StackOverflow-Dark.svg';
+import Postman from '../assets/svg/Postman.svg';
 import TailwindCSS from '../assets/svg/TailwindCSS-Dark.svg';
 import Vercel from '../assets/svg/Vercel-Dark.svg';
 import VSCode from '../assets/svg/VSCode-Dark.svg';
@@ -78,8 +78,8 @@ export const skillIcon = [
     name: 'Github',
   },
   {
-    icon: StackOverflow,
-    name: 'StackOverflow',
+    icon: Postman,
+    name: 'Postman',
   },
   {
     icon: Vercel,

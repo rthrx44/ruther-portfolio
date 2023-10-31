@@ -3,7 +3,7 @@ import './Landing.css'
 import Navbar from '../../components/navbar/Navbar'
 import Ruther01 from '../../components/assets/Ruther01.png'
 import Ruther02 from '../../components/assets/Ruther02.png'
-import Tictactoe from '../../components/assets/Tik-Tac-Toe.png'
+import Trailers from '../../components/assets/trailers.png'
 import Ambiance from '../../components/assets/Ambiance.png'
 import Banking from '../../components/assets/Banking.png'
 import Slack from '../../components/assets/Slack.png'
@@ -160,22 +160,23 @@ function Landing({skillIcon, covape}) {
         <div className='project_content'>
           <div className='project_link-con'>
             <div className='project_img website lazy loading'>
-              <img className='website_img' src={Tictactoe} data-src={Tictactoe} alt="Tic Tac Toe" title='Website Preview'/>
+              <img className='website_img' src={Trailers} data-src={Trailers} alt="Tic Tac Toe" title='Website Preview'/>
             </div>
-            <p className='project_name title'>Tic Tac Toe</p>
-            <p className='project_description details'>A simple tic tac toe website. <br/>A game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares..</p>
+            <p className='project_name title'>Trailers</p>
+            <p className='project_description details'>Trailers is a movie app where you can watch trending, popular, top-rated, and upcoming Movie/TV shows.</p>
             <div className='project_tech ptech'>
               <ul className='tech_use-con'>
-                <li className='tech_use'>HTML</li>
-                <li className='tech_use'>CSS</li>
-                <li className='tech_use'>JavaScript</li>
+                <li className='tech_use'>ReactJS</li>
+                <li className='tech_use'>Tailwind CSS</li>
+                <li className='tech_use'>TMDB API</li>
+                <li className='tech_use'>SwiperJS</li>
               </ul>
             </div>
             <div className='project_btn-con links'>
-              <a className='project_btn' href='https://github.com/rthrx44/Tictactoe' target='_blank' rel='noreferrer' title='Website Github Link'>
+              <a className='project_btn' href='https://github.com/rthrx44/trailers' target='_blank' rel='noreferrer' title='Website Github Link'>
                 <NButton displayText='Source Code' icon={<GitHubIcon/>}/>
               </a>
-              <a className='project_btn' href='https://tictactoe-rthrx44.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
+              <a className='project_btn' href='https://trailers-alpha.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
                 <NButton displayText='Live Demo' icon={<OpenInNewRoundedIcon/>}/>
               </a>
             </div>
@@ -215,6 +216,7 @@ function Landing({skillIcon, covape}) {
               <ul className='tech_use-con'>
                 <li className='tech_use'>CSS</li>
                 <li className='tech_use'>ReactJS</li>
+                <li className='tech_use'>Slack API</li>
               </ul>
             </div>
             <div className='project_btn-con links'>
@@ -234,7 +236,7 @@ function Landing({skillIcon, covape}) {
             <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
             <div className='project_tech ptech'>
               <ul className='tech_use-con'>
-                <li className='tech_use'>SCSS</li>
+                <li className='tech_use'>SASS</li>
                 <li className='tech_use'>ReactJS</li>
                 <li className='tech_use'>JavaScript</li>
               </ul>

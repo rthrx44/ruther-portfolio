@@ -277,16 +277,19 @@
 }
 
 .tech_use-con {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
   gap: 0.5rem;
   padding: 0;
   font-family: var(--font-secondary);
   font-size: var(--size-xs);
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .tech_use {
+  text-align: center;
   border: 2px solid var(--clr-pink);
   border-radius: 1rem;
   padding: 0.05rem 0.4rem;
@@ -554,7 +557,6 @@
   }
   .details {
     grid-area: details;
-    padding-top: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     margin: 0;
