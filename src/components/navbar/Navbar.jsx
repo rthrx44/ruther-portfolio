@@ -4,7 +4,7 @@ import Darktheme from '../darktheme/Darktheme'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { RButton } from '../buttons/Buttons';
-import Resume from '../assets/Resume.pdf'
+import Resume from '../assets/Ruther-Dio-Resume.pdf'
 
 function Navbar() {
 
