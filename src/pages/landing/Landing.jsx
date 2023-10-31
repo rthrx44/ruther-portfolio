@@ -3,6 +3,7 @@ import './Landing.css'
 import Navbar from '../../components/navbar/Navbar'
 import Ruther01 from '../../components/assets/Ruther01.png'
 import Ruther02 from '../../components/assets/Ruther02.png'
+import Trailers from '../../components/assets/Trailers.png'
 import Ambiance from '../../components/assets/Ambiance.png'
 import Banking from '../../components/assets/Banking.png'
 import Slack from '../../components/assets/Slack.png'
@@ -159,6 +160,7 @@ function Landing({skillIcon, covape}) {
         <div className='project_content'>
           <div className='project_link-con'>
             <div className='project_img website lazy loading'>
+              <img className='website_img' src={Trailers} data-src={Trailers} alt="Trailers" title='Website Preview'/>
             </div>
             <p className='project_name title'>Trailers</p>
             <p className='project_description details'>Trailers is a movie app where you can watch trending, popular, top-rated, and upcoming Movie/TV shows.</p>
