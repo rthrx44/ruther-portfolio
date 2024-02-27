@@ -17,7 +17,7 @@ import { Logo, Screenshot } from '../../components/utils/Index'
 
 
 
-function Landing({skillIcon, covape}) {
+function Landing({skillIcon, currentLearnSkill, covape}) {
   useEffect(() => {
     const images = document.querySelectorAll(".lazy");
 
@@ -108,6 +108,14 @@ function Landing({skillIcon, covape}) {
         <h3 className='about_title'>Technologies</h3>
         <div className='tech'>
           {skillIcon.map((logo, index) => {
+            return <Logo logo={logo} key={index}/>
+          })}
+        </div>
+      </section>
+      <section className='skills container section'>
+        <h3 className='about_title'>Currently Learning Technologies</h3>
+        <div className='tech'>
+          {currentLearnSkill.map((logo, index) => {
             return <Logo logo={logo} key={index}/>
           })}
         </div>

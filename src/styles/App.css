@@ -39,9 +39,6 @@
   margin: 0;
   line-height: calc(1em + 0.5rem);
   box-sizing: border-box;
-}
-
-html {
   scroll-behavior: smooth;
 }
 

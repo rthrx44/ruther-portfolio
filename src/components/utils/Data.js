@@ -16,6 +16,11 @@ import TailwindCSS from '../assets/svg/TailwindCSS-Dark.svg';
 import Vercel from '../assets/svg/Vercel-Dark.svg';
 import VSCode from '../assets/svg/VSCode-Dark.svg';
 
+//? Currently Learning Skills
+import Angular from '../assets/svg/Angular-Dark.svg'
+import Next from '../assets/svg/NextJS-Dark.svg'
+import Node from '../assets/svg/NodeJS-Dark.svg'
+
 //? Covape Website Screenshot
 import Covape01 from '../assets/Covape01.png'
 import Covape02 from '../assets/Covape02.png'
@@ -88,6 +93,21 @@ export const skillIcon = [
   {
     icon: Discord,
     name: 'Discord',
+  },
+]
+
+export const currentLearnSkill = [
+  {
+    icon: Angular,
+    name: 'Angular',
+  },
+  {
+    icon: Next,
+    name: 'Next',
+  },
+  {
+    icon: Node,
+    name: 'Node',
   },
 ]
 
