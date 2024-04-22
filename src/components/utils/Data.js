@@ -17,7 +17,6 @@ import Vercel from '../assets/svg/Vercel-Dark.svg';
 import VSCode from '../assets/svg/VSCode-Dark.svg';
 
 //? Currently Learning Skills
-import Angular from '../assets/svg/Angular-Dark.svg'
 import Next from '../assets/svg/NextJS-Dark.svg'
 import Node from '../assets/svg/NodeJS-Dark.svg'
 
@@ -97,10 +96,6 @@ export const skillIcon = [
 ]
 
 export const currentLearnSkill = [
-  {
-    icon: Angular,
-    name: 'Angular',
-  },
   {
     icon: Next,
     name: 'Next',
