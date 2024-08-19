@@ -1,19 +1,13 @@
 //? Skill Logo
 import Bash from '../assets/svg/Bash-Dark.svg';
 import CSS from '../assets/svg/CSS.svg';
-import Discord from '../assets/svg/Discord.svg';
 import Figma from '../assets/svg/Figma-Dark.svg';
-import Git from '../assets/svg/Git.svg';
 import Github from '../assets/svg/Github-Dark.svg';
 import HTML from '../assets/svg/HTML.svg';
-import Illustrator from '../assets/svg/Illustrator.svg';
 import JavaScript from '../assets/svg/JavaScript.svg';
-import MaterialUI from '../assets/svg/MaterialUI-Dark.svg';
 import Photoshop from '../assets/svg/Photoshop.svg';
 import React from '../assets/svg/React-Dark.svg';
-import Postman from '../assets/svg/Postman.svg';
 import TailwindCSS from '../assets/svg/TailwindCSS-Dark.svg';
-import Vercel from '../assets/svg/Vercel-Dark.svg';
 import VSCode from '../assets/svg/VSCode-Dark.svg';
 
 //? Currently Learning Skills
@@ -50,16 +44,8 @@ export const skillIcon = [
     name: 'Figma',
   },
   {
-    icon: Illustrator,
-    name: 'Illustrator',
-  },
-  {
     icon: Photoshop,
     name: 'Photoshop',
-  },
-  {
-    icon: MaterialUI,
-    name: 'MaterialUI',
   },
   {
     icon: TailwindCSS,
@@ -74,24 +60,8 @@ export const skillIcon = [
     name: 'Bash',
   },
   {
-    icon: Git,
-    name: 'Git',
-  },
-  {
     icon: Github,
     name: 'Github',
-  },
-  {
-    icon: Postman,
-    name: 'Postman',
-  },
-  {
-    icon: Vercel,
-    name: 'Vercel',
-  },
-  {
-    icon: Discord,
-    name: 'Discord',
   },
 ]
 
