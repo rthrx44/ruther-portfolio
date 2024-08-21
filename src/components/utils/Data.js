@@ -9,10 +9,16 @@ import Photoshop from '../assets/svg/Photoshop.svg';
 import React from '../assets/svg/React-Dark.svg';
 import TailwindCSS from '../assets/svg/TailwindCSS-Dark.svg';
 import VSCode from '../assets/svg/VSCode-Dark.svg';
-
-//? Currently Learning Skills
 import Next from '../assets/svg/NextJS-Dark.svg'
 import Node from '../assets/svg/NodeJS-Dark.svg'
+
+//? Currently Learning Skills
+
+import Ruby from '../assets/svg/Ruby.svg'
+import Rails from '../assets/svg/Rails.svg'
+import MySQL from '../assets/svg/MySQL-Dark.svg'
+import PostgreSQL from '../assets/svg/PostgreSQL-Dark.svg'
+
 
 //? Covape Website Screenshot
 import Covape01 from '../assets/Covape01.png'
@@ -63,9 +69,6 @@ export const skillIcon = [
     icon: Github,
     name: 'Github',
   },
-]
-
-export const currentLearnSkill = [
   {
     icon: Next,
     name: 'Next',
@@ -73,6 +76,25 @@ export const currentLearnSkill = [
   {
     icon: Node,
     name: 'Node',
+  },
+]
+
+export const currentLearnSkill = [
+  {
+    icon: Ruby,
+    name: 'Ruby',
+  },
+  {
+    icon: Rails,
+    name: 'Rails',
+  },
+  {
+    icon: MySQL,
+    name: 'MySQL',
+  },
+  {
+    icon: PostgreSQL,
+    name: 'PostgreSQL',
   },
 ]
 

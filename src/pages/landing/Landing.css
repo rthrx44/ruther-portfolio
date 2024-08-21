@@ -497,7 +497,7 @@
   }
 
   .tech {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .featured_content {
@@ -522,8 +522,8 @@
   }
 
   .logo-con {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   .screenshot-con {
@@ -643,12 +643,12 @@
   }
 
   .tech {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .logo-con {
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
   }
 
   .project_title {
@@ -708,8 +708,8 @@
   }
 
   .logo-con {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
   }
 
   .project_link-con {
@@ -740,8 +740,8 @@
   }
 
   .logo-con {
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
   }
 
   .project_link-con {
