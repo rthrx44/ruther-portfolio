@@ -5,8 +5,6 @@ import Ruther01 from '../../components/assets/Ruther01.png'
 import Ruther02 from '../../components/assets/Ruther02.png'
 import Trailers from '../../components/assets/Trailers.png'
 import Ambiance from '../../components/assets/Ambiance.png'
-import Banking from '../../components/assets/Banking.png'
-import Slack from '../../components/assets/Slack.png'
 import DeveloperBoardRoundedIcon from '@mui/icons-material/DeveloperBoardRounded';
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
@@ -210,50 +208,6 @@ function Landing({skillIcon, currentLearnSkill, covape}) {
                 <NButton displayText='Mock-up' icon={<DeveloperBoardRoundedIcon/>}/>
               </a>
               <a className='project_btn' href='https://ambiance-website.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
-                <NButton displayText='Live Demo' icon={<OpenInNewRoundedIcon/>}/>
-              </a>
-            </div>
-          </div>
-          <div className='project_link-con'>
-            <div className='project_img website lazy loading'>
-              <img className='website_img' src={Slack} data-src={Slack} alt="Slack" title='Website Preview'/>
-            </div>
-            <p className='project_name title'>Slack App <br/>(Collaboration)</p>
-            <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
-            <div className='project_tech ptech'>
-              <ul className='tech_use-con'>
-                <li className='tech_use'>CSS</li>
-                <li className='tech_use'>ReactJS</li>
-                <li className='tech_use'>Slack API</li>
-              </ul>
-            </div>
-            <div className='project_btn-con links'>
-              <a className='project_btn' href='https://github.com/rthrx44/slack-app-batch26' target='_blank' rel='noreferrer' title='Website Github Link'>
-                <NButton displayText='Source Code' icon={<GitHubIcon/>}/>
-              </a>
-              <a className='project_btn' href='https://slack-app-batch26.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
-                <NButton displayText='Live Demo' icon={<OpenInNewRoundedIcon/>}/>
-              </a>
-            </div>
-          </div>
-          <div className='project_link-con opposite'  >
-            <div className='project_img website lazy loading'>
-              <img className='website_img' src={Banking} data-src={Banking} alt="Banking/Budget App" title='Website Preview'/>
-            </div>
-            <p className='project_name title'>Banking/Budget App <br/>(Collaboration)</p>
-            <p className='project_description details'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Vitae nam, eius suscipit qui error velit! <br/>Repellat repudiandae voluptate fuga est quaerat</p>
-            <div className='project_tech ptech'>
-              <ul className='tech_use-con'>
-                <li className='tech_use'>SASS</li>
-                <li className='tech_use'>ReactJS</li>
-                <li className='tech_use'>JavaScript</li>
-              </ul>
-            </div>
-            <div className='project_btn-con links'>
-              <a className='project_btn' href='https://github.com/hnbmunoz/bank-and-budget' target='_blank' rel='noreferrer' title='Website Github Link'>
-                <NButton displayText='Source Code' icon={<GitHubIcon/>}/>
-              </a>
-              <a className='project_btn' href='https://bank-and-budget.vercel.app/' target='_blank' rel='noreferrer' title='Website Link'>
                 <NButton displayText='Live Demo' icon={<OpenInNewRoundedIcon/>}/>
               </a>
             </div>
