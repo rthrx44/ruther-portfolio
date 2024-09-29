@@ -16,7 +16,6 @@ import Node from '../assets/svg/NodeJS-Dark.svg'
 
 import Ruby from '../assets/svg/Ruby.svg'
 import Rails from '../assets/svg/Rails.svg'
-import MySQL from '../assets/svg/MySQL-Dark.svg'
 import PostgreSQL from '../assets/svg/PostgreSQL-Dark.svg'
 
 
@@ -87,10 +86,6 @@ export const currentLearnSkill = [
   {
     icon: Rails,
     name: 'Rails',
-  },
-  {
-    icon: MySQL,
-    name: 'MySQL',
   },
   {
     icon: PostgreSQL,
